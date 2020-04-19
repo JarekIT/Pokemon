@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-5">
+            <hr>
+            <h3>Catched Pokemons</h3>
+            <hr>
+        </div>
+
+        <div class="col-7">
+            <hr>
+            <h3>Press on the monster to catch him</h3>
+            <hr>
+            <div class="golden-frame" 
+                *ngFor="let pkm of pokemons.results; let i = index" 
+                routerLink="pokemon/{{i+1}}" >
+            
+                <p>#{{i+1}}</p>
+                <img src="https://pokeres.bastionbot.org/images/pokemon/{{i+1}}.png" width="100"/>
+                <p>{{ pkm.name }}</p>
+            </div>
+        </div>
+    </div>
+</div>

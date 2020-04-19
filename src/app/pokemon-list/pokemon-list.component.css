@@ -1,0 +1,14 @@
+.golden-frame{
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid #d2a56d;
+    cursor: pointer;
+    text-align: center;
+    color: #d2a56d;
+}
+
+h3 {
+    text-align: center;
+    color: #d2a56d;
+}
