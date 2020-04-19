@@ -1,4 +1,4 @@
-export interface PokemonID {
+export interface Pokemon {
     abilities:                Ability[];
     base_experience:          number;
     forms:                    Species[];
