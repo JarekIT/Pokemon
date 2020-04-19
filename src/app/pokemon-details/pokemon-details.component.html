@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+
+        <!-- caught pokemons list -->
+        <div class="col-sm-5">
+                <!-- There will be catched list -->
+        </div>
+
+        <!-- Pokemon Detais -->
+        <div class="col-sm-7">
+            <hr>
+            <h3>Pokemon Details</h3>
+            <hr>
+            
+            <!-- picture -->
+            <div class="col-sm">
+                <img src="https://pokeres.bastionbot.org/images/pokemon/{{pokemon.id}}.png" width="200"/>
+            </div>
+    
+            <!-- describe -->
+            <div class="col-sm">
+                <h3>
+                    #{{pokemon.id}} {{ pokemon.name | titlecase}}
+                </h3>
+                <p>
+                    Type: <span *ngFor="let tp of pokemon.types">{{tp.type.name}}</span> <br>
+                    Weight: {{pokemon.weight/10}} kg <br>
+                    Height: {{pokemon.height/10}} m <br>
+                </p>
+                <div style="text-align:center;">
+                    <button (click)="goBack()">Go Back</button>
+                    <button (click)="catch()">Catch Him</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
