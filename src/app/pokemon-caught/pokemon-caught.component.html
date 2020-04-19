@@ -1,0 +1,29 @@
+<hr>
+<h3>Caught Pokemons</h3>
+<hr>
+
+<table class="table table-sm table-bordered" style="text-align: center;" >
+    <tr>
+        <td>Id</td>
+        <td>Picture</td>
+        <td>Name</td>
+        <td>Date Catch</td>
+    </tr>
+    <tr *ngFor="let pkm of caughtList">
+        <td>
+            {{pkm.id}}
+        </td>
+        <td>
+            <img src="{{pkm.image}}" width="50"/>
+        </td>
+        <td>
+            {{pkm.name | titlecase}}
+        </td>
+        <td>
+            {{pkm.dateCatch | date:"yyyy-MM-dd"}} <br>
+            {{pkm.dateCatch | date:"hh-mm-ss"}}
+        </td>
+    </tr>
+
+
+</table>

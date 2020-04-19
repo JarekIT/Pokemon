@@ -8,12 +8,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { PokemonService } from './pokemon.service';
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { PokemonDetailsComponent } from './pokemon-details/pokemon-details.component';
+import { PokemonCaughtComponent } from './pokemon-caught/pokemon-caught.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PokemonListComponent,
-    PokemonDetailsComponent
+    PokemonDetailsComponent,
+    PokemonCaughtComponent
   ],
   imports: [
     BrowserModule,
